@@ -21,7 +21,6 @@ A modern, multi-page frontend prototype for an Internet Service Provider (ISP) p
 ![Main Interface](images/img3.png)
 ![Main Interface](images/img4.png)
 ![Main Interface](images/img5.png)
-![Main Interface](images/img5.png)
 ![Main Interface](images/img6.png)
 
 ---
