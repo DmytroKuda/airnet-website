@@ -1,0 +1,26 @@
+[
+    {
+        "accountNumber": "724822",
+        "phone": "0669126412",
+        "date": "01.08.2026",
+        "description": "Списання за тариф «Гігабіт»",
+        "sum": "300",
+        "inOrOut": false
+    },
+    {
+        "accountNumber": "724822",
+        "phone": "0669126412",
+        "date": "28.07.2026",
+        "description": "Поповнення (LiqPay)",
+        "sum": "300",
+        "inOrOut": true
+    },
+    {
+        "accountNumber": "172719",
+        "phone": "0635171621",
+        "date": "15.06.2026",
+        "description": "Поповнення (LiqPay)",
+        "sum": "500",
+        "inOrOut": false
+    }
+]

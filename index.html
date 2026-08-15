@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна — AirNet</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Швидкісний Інтернет AirNet у твоєму домі</h1>
+                <p>Стабільний зв'язок до 1 Гбіт/с. Працюємо навіть під час відключень світла.</p>
+                <a href="tariffs.html" class="btn-primary">Обрати тариф</a>
+            </div>
+        </section>
+
+        <section class="advantages-section">
+            <div class="container">
+                <h2>Чому обирають AirNet?</h2>
+                <p class="section-subtitle">Ми дбаємо про якість зв'язку та ваш комфорт щодня</p>
+                
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Гігабітна швидкість</h3>
+                        <p>Швидкість до 1000 Мбіт/с дозволяє завантажувати важкі файли за лічені секунди та дивитися відео в 4K без затримок.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="card-icon">🔋</div>
+                        <h3>Працюємо без світла</h3>
+                        <p>Завдяки енергонезалежній технології PON та акумуляторам на вузлах, інтернет працює під час відключень електроенергії.</p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="card-icon">🎧</div>
+                        <h3>Підтримка 24/7</h3>
+                        <p>Наші спеціалісти завжди на зв'язку. Вирішуємо технічні питання швидко та без довгих очікувань у черзі.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-section">
+            <div class="container">
+                <div class="order-wrapper">
+                    <div class="order-text">
+                        <h2>Готові підключити AirNet?</h2>
+                        <p>Залиште свої дані, і наш менеджер передзвонить вам протягом 15 хвилин для уточнення деталей та вибору зручного часу.</p>
+                    </div>
+
+                    <form class="order-form appl-form">
+                        <div class="form-group">
+                            <label for="user-name-appl">Ваше ім'я</label>
+                            <input type="text" id="user-name-appl" placeholder="Наприклад, Олексій">
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user-phone-appl">Номер телефону</label>
+                            <input type="tel" id="user-phone-appl" placeholder="+380 (99) 000-00-00">
+                            <small class="error-msg"></small>
+                        </div>
+
+                        <button type="submit" id="btn-sbm-order-appl" class="btn-submit">Надіслати заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    
+    <div id="modal-success-appl" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Заявку прийнято!</h3>
+            <p>Ми зателефонуємо вам найближчим часом.</p>
+            <button id="modal-close-btn-appl" type="button">Чудово!</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

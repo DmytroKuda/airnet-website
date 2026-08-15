@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід та Реєстрація — AirNet</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="auth-main">
+        <div class="auth-card">
+            <div class="auth-tabs">
+                <button type="button" class="auth-tab-btn active" data-auth-tab="tab-login">Вхід</button>
+                <button type="button" class="auth-tab-btn" data-auth-tab="tab-register">Реєстрація</button>
+            </div>
+
+            <form id="tab-login" class="auth-form active">
+                <h2>Авторизація</h2>
+                <div class="form-group">
+                    <label for="login-account">Особовий рахунок або телефон:</label>
+                    <input type="text" id="login-account" placeholder="849201 або +380..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Пароль:</label>
+                    <input type="password" id="login-password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn">Увійти в кабінет</button>
+            </form>
+
+            <form id="tab-register" class="auth-form">
+                <h2>Створення акаунта</h2>
+                <div class="form-group">
+                    <label for="reg-name">Ім'я:</label>
+                    <input type="text" id="reg-name" placeholder="Олексій" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-surname">Прізвище:</label>
+                    <input type="text" id="reg-surname" placeholder="Шевченко" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-phone">Номер телефону:</label>
+                    <input type="tel" id="reg-phone" placeholder="+380 99 999 9999" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-email">Електронна пошта:</label>
+                    <input type="email" id="reg-email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reg-password">Придумайте пароль:</label>
+                    <input type="password" id="reg-password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit-btn">Зареєструватися</button>
+            </form>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <div id="modal-success-login" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-title"></h3>
+            <p id="modal-info"></p>
+            <button id="modal-close-btn-login" type="button">Чудово!</button>
+        </div>
+    </div>
+
+    <div id="modal-success-sign-up" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Реєстрація успішна!</h3>
+            <p>Ваш особовий рахунок: <span id="account-number-modal"></span></p>
+            <button id="modal-close-btn-signup" type="button">Чудово!</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

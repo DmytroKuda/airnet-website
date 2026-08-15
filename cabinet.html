@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особистий кабінет — AirNet</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="profile-section">
+            <div class="greeting">
+                <img src="images/user.png" alt="Аватар користувача" class="user-avatar">
+                <div class="name-greet">
+                    <h2>Вітаємо, <span id="user-name-display"></span>!</h2>
+                    <p class="status-online" id="network-status"></p>
+                </div>
+            </div>
+
+            <div class="pers-info">
+                <p>
+                    <strong>Особовий рахунок:</strong> 
+                    <span id="account-number"></span> 
+                    <button id="copy-account-btn" class="copy-btn" title="Скопіювати рахунок">📋</button>
+                    <span class="copy-toast">Скопійовано!</span>
+                </p>
+                <p><strong>Адреса:</strong> <span id="user-address"></span></p>
+                <p><strong>Телефон:</strong> <span id="user-phone"></span></p>
+            </div>
+
+            <div class="balance">
+                <span class="balance-title">Поточний баланс</span>
+                <div class="balance-amount"><span id="user-balance"></span> грн</div>
+                <p class="pay-date">До списання: <strong id="days-left"></strong></p>
+            </div>
+        </section>
+
+        <section class="money-section">
+            <div class="payment">
+                <h3>💳 Швидкі дії</h3>
+                <div class="pay-actions">
+                    <button type="button" id="btn-top-up" class="btn-primary">Поповнити рахунок</button>
+                    <button type="button" id="btn-promised-pay" class="btn-secondary">Обіцяний платіж</button>
+                </div>
+            </div>
+
+            <div class="my-tariff">
+                <h3>📦 Поточний тариф</h3>
+                <div class="tariff-info-card">
+                    <h4><span id="tar-title"></span></h4>
+                    <p class="tar-price"></p>
+                    <a href="tariffs.html" id="btn-change-tariff">Змінити тариф</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tabs-section">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="tab-transactions">Історія платежів</button>
+                <button class="tab-btn" data-tab="tab-services">Додаткові послуги</button>
+                <button class="tab-btn" data-tab="tab-settings">Налаштування</button>
+            </div>
+
+            <div class="tabs-content">
+                <div id="tab-transactions" class="tab-pane active">
+                    <h3>Історія транзакцій</h3>
+                    <table class="history-table">
+                        <thead>
+                            <tr>
+                                <th>Дата</th>
+                                <th>Опис</th>
+                                <th>Сума</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-list"></tbody>
+                    </table>
+                </div>
+
+                <div id="tab-services" class="tab-pane">
+                    <h3>Додаткові опції</h3>
+                    <div class="service-item">
+                        <div>
+                            <h4>Статична IP-адреса</h4>
+                            <p>+50 грн/міс</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-ip">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="service-item">
+                        <div>
+                            <h4>Пауза послуги (Відпустка)</h4>
+                            <p>Призупинити списання</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-pause">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div id="tab-settings" class="tab-pane">
+                    <h3>Налаштування профілю</h3>
+                    <form id="settings-form">
+                        <div class="form-group">
+                            <label for="settings-email">Email для сповіщень:</label>
+                            <input type="email" id="settings-email" placeholder="example@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="settings-pass">Новий пароль:</label>
+                            <input type="password" id="settings-pass" placeholder="••••••••">
+                        </div>
+                        <button type="submit" class="btn-submit">Зберегти зміни</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="footer-placeholder"></div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

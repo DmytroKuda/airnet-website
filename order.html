@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення — AirNet</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="order-wrapper">
+            <div class="order-sidebar">
+                <div id="selected-tariff-card" class="tariff-card featured"></div>
+            </div>
+
+            <div class="order-form-container">
+                <h2>Оформлення підключення</h2>
+                <form id="orderForm" class="ordering-form">
+                    <div class="form-group">
+                        <label for="userName">Ім'я:</label>
+                        <input type="text" id="userName" name="firstname" placeholder="Олексій" required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userLastName">Прізвище:</label>
+                        <input type="text" id="userLastName" name="lastname" placeholder="Шевченко" required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userPhone">Номер телефону:</label>
+                        <input type="tel" id="userPhone" name="phone" placeholder="+380..." required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Електронна пошта:</label>
+                        <input type="email" id="userEmail" name="email" placeholder="alex@gmail.com" required>
+                        <span class="error-msg"></span>
+                    </div>
+
+                    <div class="form-group contact-methods">
+                        <label>Як зручно з вами зв'язатись?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="contact_method" value="Телеграм" checked> Telegram</label>
+                            <label><input type="radio" name="contact_method" value="Вайбер"> Viber</label>
+                            <label><input type="radio" name="contact_method" value="Дзвінок"> Дзвінок</label>
+                        </div>
+                    </div>
+
+                    <div class="address-accordion">
+                        <details>
+                            <summary>Вказати адресу підключення</summary>
+                            
+                            <div class="form-group">
+                                <label for="region">Область</label>
+                                <input type="text" id="region" name="region" placeholder="Львівська">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">Місто</label>
+                                <input type="text" id="city" name="city" placeholder="Львів">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="street">Вулиця та будинок</label>
+                                <input type="text" id="street" name="street" placeholder="вул. Хрещатик, 1">
+                            </div>
+                        </details>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Надіслати</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <div id="modal-success-order" class="modal">
+        <div class="modal-content">
+            <h3>🎉 Заявку прийнято!</h3>
+            <p>Ми зателефонуємо вам найближчим часом.</p>
+            <button id="modal-close-btn-order" type="button">Чудово!</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

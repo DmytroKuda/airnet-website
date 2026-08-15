@@ -1,0 +1,70 @@
+[
+    {
+        "id": "flat-100",
+        "category": "flat",
+        "title": "Базовий",
+        "speed": "100 Мбіт/с",
+        "sum": "200",
+        "currency": "грн/міс",
+        "isFeatured": false,
+        "features": [
+            "Безлімітний інтернет",
+            "Базова підтримка 24/7"
+        ]
+    },
+    {
+        "id": "flat-1000",
+        "category": "flat",
+        "title": "Гігабіт",
+        "speed": "1000 Мбіт/с",
+        "sum": "300",
+        "currency": "грн/міс",
+        "isFeatured": true,
+        "badgeText": "ТОП Вибір",
+        "features": [
+            "Працює під час відключень (PON)",
+            "Максимальна швидкість",
+            "Пріоритетна підтримка"
+        ]
+    },
+    {
+        "id": "flat-tv",
+        "category": "flat",
+        "title": "Максимум + TV",
+        "speed": "1000 Мбіт/с",
+        "sum": "400",
+        "currency": "грн/міс",
+        "isFeatured": false,
+        "features": [
+            "Гігабітний інтернет",
+            "200+ ТВ каналів",
+            "Пауза/запис ефіру"
+        ]
+    },
+    {
+        "id": "house-300",
+        "category": "house",
+        "title": "Дім 300",
+        "speed": "300 Мбіт/с",
+        "sum": "350",
+        "currency": "грн/міс",
+        "isFeatured": false,
+        "features": [
+            "Підключення по оптоволокну",
+            "Стабільний сигнал"
+        ]
+    },
+    {
+        "id": "house-1000",
+        "category": "house",
+        "title": "Дім Гігабіт",
+        "speed": "1000 Мбіт/с",
+        "sum": "500",
+        "currency": "грн/міс",
+        "isFeatured": false,
+        "features": [
+            "Енергонезалежна лінія",
+            "Безліміт на повній швидкості"
+        ]
+    }
+]

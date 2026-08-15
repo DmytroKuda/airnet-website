@@ -1,0 +1,202 @@
+/* hero section */
+
+.hero-section {
+    background-color: var(--dark-bg);
+    color: var(--text-for-dark);
+    text-align: center;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    color: var(--text-for-dark) !important;
+}
+
+.hero-content p {
+    font-size: 1.125rem;
+    color: var(--text-for-dark) !important;
+    opacity: 0.9;
+    margin-bottom: 2.1875rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-for-dark) !important;
+    padding: 0.875rem 2rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+}
+
+/* advantages section */
+
+.advantages-section {
+    padding: 2.25rem 5%;
+    background-color: var(--light-bg);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.advantages-section h2 {
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+    color: var(--text-color);
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-bottom: 3.125rem;
+    font-size: 1rem;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    gap: 1.875rem;
+}
+
+.advantage-card {
+    background-color: var(--card-bg);
+    padding: 2.1875rem 1.5625rem;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.advantage-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.advantage-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+}
+
+.advantage-card p {
+    font-size: 0.9375rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* order section */
+
+main .order-section {
+    background-color: var(--light-bg) !important;
+    padding: 3rem 5%;
+    transition: background-color 0.3s ease;
+}
+
+.order-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.order-text {
+    flex: 1;
+}
+
+.order-text h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.order-text p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.order-form {
+    flex: 1;
+    background-color: var(--card-bg) !important;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid var(--border-color);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.order-form label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.order-form input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 0.0938rem solid var(--border-color);
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.order-form input:focus {
+    border-color: var(--accent-color);
+}
+
+.order-form .error-msg {
+    color: #e63946;
+    font-size: 0.8rem;
+    min-height: 1rem;
+}
+
+.order-form .btn-submit {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-for-dark) !important;
+    padding: 0.875rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-form .btn-submit:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-0.125rem);
+}
