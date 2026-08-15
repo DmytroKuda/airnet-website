@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Аірнет провайдер</title>
+        <link rel="stylesheet" href="airmain.css">
+        <link rel="stylesheet" href="links/novyny.css">
+        <link rel="stylesheet" href="links/taryfy.css">
+        <link rel="stylesheet" href="links/provedeno.css">
+        <link rel="stylesheet" href="links/chaspyt.css">
+        <link rel="stylesheet" href="links/contacts.css">
+        <link rel="stylesheet" href="links/rekvizyty.css">
+        <link rel="icon" href="fotomain/icon.png" type="image/x-icon">
+        <script>
+            function changeContent(section) {
+                var sectionText = {
+                    'Головна': 'Ми - швидкозростаюча компанія, заснована у 2010 році в місті Карлівка, Полтавській області...',
+                    'Новини': 'це новини',
+                    'Тарифи': 'це тарифи',
+                    'Проведення': 'Проведення',
+                    'ЧасПит': 'часті запитання',
+                    'Контакти': 'зв"язок',
+                    'Реквізити': 'реквізитні дані'
+                };
+                var klas = {
+                    'Головна': 'golovnacontent',
+                    'Новини': 'novyny',
+                    'Тарифи': 'taryfy',
+                    'Проведення': 'provedeno',
+                    'ЧасПит': 'chaspyt',
+                    'Контакти': 'contacts',
+                    'Реквізити': 'rekvisyty'
+                };
+                var allSections = ['golovnacontent', 'novyny', 'taryfy', 'provedeno', 'chaspyt', 'contacts', 'rekvisyty'];
+                for (var i = 0; i < allSections.length; i++) {
+                    document.querySelector('.' + allSections[i]).style.display = 'none';
+                }
+                document.querySelector('.' + klas[section]).style.display = 'block';
+            }
+
+            /**details**/
+            document.addEventListener('DOMContentLoaded', function() {
+                const detailsButtons = document.querySelectorAll('.subheader2');
+
+                detailsButtons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        const details = button.nextElementSibling;
+                        if (details.style.display === 'none' || details.style.display === '') {
+                            details.style.display = 'block';
+                        } else {
+                            details.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="text">
+                <div class="mainheader">АІРНЕТ - інтернет провайдер</div>
+                <div class="mainbuttons">
+                    <button class="linkmargin" onclick="changeContent('Головна')">Головна</button>
+                    <button onclick="changeContent('Новини')">Новини</button>
+                    <button onclick="changeContent('Тарифи')">Тарифи</button>
+                    <button onclick="changeContent('Проведення')">Проведення</button>
+                    <button onclick="changeContent('ЧасПит')">ЧасПит</button>
+                    <button onclick="changeContent('Контакти')">Контакти</button>
+                    <button onclick="changeContent('Реквізити')">Реквізити</button>
+                </div>
+
+<!-- Головна -->
+
+                <div class="golovnacontent">
+                    <div class="header1">Головна</div>
+                    <div class="Golovna">
+                        Ми - швидкозростаюча компанія, заснована у 2010 році в місті Карлівка, Полтавській області. 
+                        За цей час ми продемонстрували швидкий темп росту в умовах жорсткої конкуренції. Ключовим фактором 
+                        нашого успіху стало вміле використання передових технологій та впровадження якісного обладнання.<br> 
+                        Наші мережі побудовані на основі високошвидкісних оптоволоконних каналів передачі даних, 
+                        що надає можливість практично необмежено масштабувати швидкість обміну інформацією. Система зовнішніх 
+                        каналів максимально оптимізована, і завдяки співпраці з передовими операторами магістрального зв'язку, 
+                        ми маємо максимальну резервацію каналів.
+                        Завдяки цьому ми можемо задовольнити будь-які вимоги клієнтів на найвищому рівні:<ul>
+                            <li>відсутність перебоїв і "мертвого часу" у роботі;</li>
+                            <li>швидкість обміну даними обмежується лише можливістю мережевого обладнання клієнтів;</li>
+                            <li>надання транспорту до Полтави;</li>
+                            <li>забезпечення L2 транзиту в межах міста (об'єднання територіально роз'єднаних офісів в одну мережу);</li>
+                            <li>можливість оптимального вибору тарифного пакета для будь-яких потреб;</li>
+                            <li>максимально вигідна вартість послуг для клієнта.</li>
+                        </ul>
+                    </div>
+                </div>
+
+<!-- новини -->
+
+                <div class="novyny" style="display:none;">
+                    <div class="header1">Новини</div>
+                    <div class="novyny">
+                        <li class="header2">Увага! З 20.02.2021 р. ЗМІНА РАХУНКІВ!
+                            <li class="subheader2">Докладніше</li>
+                            <div class="details" style="display:none;">
+                                УВАГА! ЗМІНА РАХУНКІВ
+                                <ul>
+                                    <li>З 20.02.2021 відповідно до рішення Наглядової ради ФІЛІЯ "ПОЛТАВСЬКЕ ГРУ" переходить на єдиний МФО ПриватБанку.</li>
+                                    
+                                    <li>ТОВ "АірНет" 39500, Полтавская обл. м. Карлівка, вул. Полтавський шлях, 44 а
+                                    п/р UA543052990000026005001201862 в ПАТ КБ "ПРИВАТБАНК",
+                                    ЄДРПОУ 37115208.
+                                    тел. +380504057979</li>
+                                    
+                                    <li>ФОП Кріль Петро Якович 39500, Полтавская обл. м. Карлівка, вул. Полтавський шлях, 44 а
+                                    п/р UA663052990000026000021201955 в ПАТ КБ "ПРИВАТБАНК",
+                                    ЄДРПОУ/ІНН 1984206316.
+                                    тел. +380504057979</li>
+                                    
+                                    <li>ФОП Кріль Алла Іванівна 39500, Полтавская обл. м. Карлівка, вул. Полтавський шлях, 44 а
+                                    п/р UA053052990000026000031202104 в ПАТ КБ "ПРИВАТБАНК",
+                                    ЄДРПОУ/ІНН 2876304123.
+                                    тел. +380504057979</li>
+                                </ul></div>
+                        </li>
+                        <li class="header2">Акція! Підключення безкоштовне!</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">
+                            <ul>    
+                                <li>Підключення безкоштовне!</li>
+                                <li>Для існуючих абонентів з 25.12.2015 по 15.01.2016 знімаємо обмеження до 100 Мбіт/с</li>
+                            </ul></div>
+                        <li class="header2">Графік роботи</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">
+                            <ul>
+                                <li>Понеділок з 8-00 до 17-00</li>
+                                <li>Вівторок з 8-00 до 17-00</li>
+                                <li>Середа з 8-00 до 17-00</li>
+                                <li>Четвер з 8-00 до 17-00</li>
+                                <li>П'ятниця з 8-00 до 16-00</li>
+                                <li>Обідня перерва з 12-00 до 13-00</li>
+                                <li>Субота Вихідний день</li>
+                                <li>Неділя Вихідний день</li>
+                            </ul>
+                        </div>
+                        <li class="header2">Регламентні роботи</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">Шановні абоненти у зв'язку з регламентними роботами на магістральному каналі зв'язку 09.07.2013 у проміжку часу з 12.00 до 14.00 будуть короткочасні перебої в роботі Інтернет. Дякую за розуміння.</div>
+                        <li class="header2">Відключення електропостачання</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">Шановні абоненти 12.06.2013р. РЕЗ знову попереджає про відключення електроживлення на Леніна 69, Леніна 67, Леніна 73, Леніна 71, Радевича 1</div>
+                        <li class="header2">Перебої з електропостачанням.</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">09.06.2013р. приблизно з 14.15 до 18.30 не працювало серверне обладнання, через перебиття електроживлення на тривалий час.
+                        </div>
+                        <li class="header2">Відключення електропостачання</li>
+                        <li class="subheader2">Докладніше</li>
+                        <div class="details" style="display:none;">Шановні абоненти 1.06.2013р. з 13-00 до 18-00 РЕСА знову попереджає про відключення електроживлення на вул.60 років Жовтня, Спартака, Леніна, Торговий ряд, ресторан "Берізка", вул.Первомайська, Радевича.</div>
+                    </div>
+                </div>
+
+<!-- тарифи -->
+
+                <div class="taryfy" style="display:none;">
+                    <div class="header1">Тарифи</div>
+                    <table>
+                        <tr class="rowsheader">
+                            <td width="5%">№</td>
+                            <td width="23%">Тариф</td>
+                            <td width="23%">Швидкість прийому</td>
+                            <td width="23%">Швидкість передачі</td>
+                            <td width="23%">Об'єм трафіку</td>
+                            <td width="20%">Абонплата на місяць, грн</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">1</td>
+                            <td class="tarcont">YurUnlim 20М</td>
+                            <td class="tarcont">до 20 Мбіт/с</td>
+                            <td class="tarcont">до 20 Мбіт/с</td>
+                            <td class="tarcont">Безлімітний</td>
+                            <td class="tarcont">200</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">2</td>
+                            <td class="tarcont">HomeUnlim 50М</td>
+                            <td class="tarcont">до 50 Мбіт/с</td>
+                            <td class="tarcont">до 50 Мбіт/с</td>
+                            <td class="tarcont">Безлімітний</td>
+                            <td class="tarcont">160</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">3</td>
+                            <td class="tarcont">HomeUnlim 100М</td>
+                            <td class="tarcont">до 100 Мбіт/с</td>
+                            <td class="tarcont">до 100 Мбіт/с</td>
+                            <td class="tarcont">Безлімітний</td>
+                            <td class="tarcont">170</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">4</td>
+                            <td class="tarcont2" colspan="4">Підключення Приватних Підприємців</td>
+                            <td class="tarcont">300</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">5</td>
+                            <td class="tarcont2" colspan="4">Оренда "білої" статичної IP-адреси</td>
+                            <td class="tarcont">50</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">6</td>
+                            <td class="tarcont2" colspan="4">Підключення абонента (приватний сектор)</td>
+                            <td class="tarcont">800</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">7</td>
+                            <td class="tarcont2" colspan="4">Смена тарифного плата на меньшу</td>
+                            <td class="tarcont">50</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">8</td>
+                            <td class="tarcont2" colspan="4">Виклик майстра* (без ремонту ПК та налаштування програмного забезпечення)</td>
+                            <td class="tarcont">150</td>
+                        </tr>
+                    </table>
+                </div>
+
+<!-- проведення -->
+
+                <div class="provedeno" style="display:none;">
+                    <div class="header1">Проведення</div>
+                    <table>
+                        <tr class="rowsheaderprov">
+                            <td colspan="3">Список будинків підключених до мережі AirNet</td>
+                        </tr>
+                        <tr>
+                            <td width="33%" class="tarcont">вул.Незалежності, 1</td>
+                            <td width="33%" class="tarcont">вул. Полтавський шлях, 42/2</td>
+                            <td width="33%" class="tarcont">вул. Успенська, 6/5</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності,3</td>
+                            <td class="tarcont">вул. Полтавський шлях, 48 (Берізка)</td>
+                            <td class="tarcont">вул. Успенська, 6/8А(сервіс продукт)</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності, 5В (критий ринок бухгалтерія)</td>
+                            <td class="tarcont">вул. Полтавський шлях, 54</td>
+                            <td class="tarcont">вул. Симоненка (Райвідділ)</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності, 6(Карлівська райсанепідстанція)</td>
+                            <td class="tarcont">вул. Полтавський шлях, 56</td>
+                            <td class="tarcont">вул. Кузнечна, 3</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності, 7 (маг. ЮСІ)</td>
+                            <td class="tarcont">вул. Полтавський шлях, 58</td>
+                            <td class="tarcont">вул. Кузнечна, 4</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності,8</td>
+                            <td class="tarcont">вул. Полтавський шлях, 65</td>
+                            <td class="tarcont">вул. Кузнечна, 5</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності,10</td>
+                            <td class="tarcont">вул. Полтавський шлях, 67</td>
+                            <td class="tarcont">вул. Кузнечна, 8</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності,12</td>
+                            <td class="tarcont">вул. Полтавський шлях, 69</td>
+                            <td class="tarcont">вул. Кузнечна, 10</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності,14</td>
+                            <td class="tarcont">вул. Полтавський шлях, 70/2А(Готель Колос)</td>
+                            <td class="tarcont">вул. Кузнечна, 12</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул.Незалежності (авторинок)</td>
+                            <td class="tarcont">вул. Полтавський шлях, 71</td>
+                            <td class="tarcont">вул. Кузнечна, 14</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Гімназична, 1(5 школа)</td>
+                            <td class="tarcont">вул. Полтавський шлях, 73</td>
+                            <td class="tarcont">вул. Кузнечна, 16</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Гімназична, 12</td>
+                            <td class="tarcont">вул. Полтавський шлях, 93</td>
+                            <td class="tarcont">вул. Радевича, 1</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Гімназична, 14</td>
+                            <td class="tarcont">вул. Полтавський шлях, 109</td>
+                            <td class="tarcont">вул. Радевича, 5/1</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Полтавського полку, 1</td>
+                            <td class="tarcont">вул. Полтавський шлях, 163</td>
+                            <td class="tarcont">вул. Радевича, 6</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Полтавського полку, 3</td>
+                            <td class="tarcont">вул. Полтавський шлях, 165</td>
+                            <td class="tarcont">вул. Радевича, 7/2</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Полтавського полку, 5</td>
+                            <td class="tarcont">вул. Спартака, 1 (Типографія) </td>
+                            <td class="tarcont">вул. Промислова, 10</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. Полтавського полку, 9</td>
+                            <td class="tarcont">вул. Спартака, 3(Дитсад №5)</td>
+                            <td class="tarcont">вул. Привокзальна, 3</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 37</td>
+                            <td class="tarcont">вул. Спартака, 14</td>
+                            <td class="tarcont">вул. Привокзальна, 5</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 39</td>
+                            <td class="tarcont">вул. Спартака, 16</td>
+                            <td class="tarcont">вул. Ніколаєвського, 4</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 39/А</td>
+                            <td class="tarcont">вул. Спартака, 18</td>
+                            <td class="tarcont">вул. Ніколаєвського, 6</td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 41</td>
+                            <td class="tarcont">вул. Спартака, 3</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 43</td>
+                            <td class="tarcont">вул. Спартака, 12(Технолюкс)</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont">вул. В. Тирновського, 94/А</td>
+                            <td class="tarcont">вул. Гурамішвілі, 11</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 12А</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 14А</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 15</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 16</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 19</td>
+                            <td class="tarcont"></td>
+                        </tr>
+                        <tr>
+                            <td class="tarcont"></td>
+                            <td class="tarcont">вул. Гурамішвілі, 21</td>
+                            <td class="tarcont"></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+<!-- ЧасПит -->
+
+                <div class="chaspyt" style="display:none;">
+                    <div class="header1">Часті запитання</div>
+
+                    <div class="headerchaspyt">Як поповнити рахунок?</div>
+
+                    <div class="subheaderchaspyt">Оплата послуг відбувається передоплатою на наш рахунок (реквізити банку) до 25 числа наступного місяця. Сплатити можна у будь-якому банку. Знижку за комісію платежу можна отримати у ПриватБанку. У призначенні платежу обов'язково слід зазначати № договору.</div>
+                    
+                    <div class="headerchaspyt">Як перевірити власний баланс?</div>
+
+                    <div class="subheaderchaspyt">Заходимо за посиланням <a href="links/abonlocal.html">abon.local</a> ввести свій логін та пароль, який вказаний у договорі (сторінка 3 у таблиці). Відразу на першій сторінці Ви побачите свій статус та баланс.</div>
+
+                    <div class="headerchaspyt">Як зайти на персональну сторінку?</div>
+
+                    <div class="subheaderchaspyt">Заходимо за посиланням <a href="links/abonlocal.html">abon.local</a> ввести свій логін та пароль, який вказаний у договорі (сторінка 3 у таблиці). На персональній сторінці можна побачити свою IP-адресу, статус, фінансові операції, а також змінити пароль.</div>
+
+                    <div class="headerchaspyt">Що робити, якщо забув поповнити рахунок?</div>
+
+                    <div class="subheaderchaspyt">Заходимо за посиланням <a href="links/abonlocal.html">abon.local</a> вводимо свій логін та пароль який вказаний у договорі (сторінка 3 у таблиці). Відразу на першій станиці Ви побачите клавішу "Працювати в кредит" натискаємо. Після ознайомлення натискаємо клавішу "Правила прочитані. Отримати кредит". Через 15-20 хвилин активується інтернет.</div>
+
+                    <div class="headerchaspyt">Як підключиться до нашого Інтернету?</div>
+
+                    <div class="subheaderchaspyt">Для цього потрібно в робочі дні за телефоном <span class="telnumber">0504057979</span> зробити заявку, після чого протягом 2-3 робочих днів буде здійснено підключення, після підключення підписуємо договір і протягом 5 робочих днів оплачуємо підключення та поточний місяць Інтернету.</div>
+
+                    <div class="headerchaspyt">Як дізнатися карту покриття?</div>
+
+                    <div class="subheaderchaspyt">Всі будинки, в яких є можливість підключитися до нашого Інтернету описані у вкладці Проведення</div>
+
+                    <div class="headerchaspyt">Що таке сервер FTP?</div>
+
+                    <div class="subheaderchaspyt">У мережі для зберігання великих обсягів даних існують FTP-сервера. FTP-сервер є своєрідною бібліотекою файлів. Для перекачування файлів між FTP-серверами та комп'ютером користувача використовується протокол FTP (File Transfer Protocol – протокол передачі файлів).
+                    Наш FTP-сервер доступний лише абонентам "АірНет". Абоненту надається можливість закачувати на файловий обмінник згідно з рубрикатором свої файли, а також завантажувати собі на комп'ютер.</div>
+
+                    <div class="headerchaspyt">Як підключиться до FTP?</div>
+                    <div class="subheaderchaspyt">Для підключення до FTP серверу абоненту потрібно в тоталкомандері далі ТС або аналогічному менеджеру створити підключення. У прикладі будемо розглядати ТЗ. Завантажуємо ТС заходимо в меню "FPT",<br><img width="100%" src="fotomain/chaspyt.png"><br> далі "З'єднатися з FTP-сервером". У панелі керування з'єднань створюємо нове з'єднання, тиснемо клавішу "Додати" і прописуємо параметри як на картинці тиснемо "Ок".<br><img src="fotomain/chaspyt1.png" style="height:60%;"><br>
+                    Ми створили нове FTP з'єднання, вибираємо створене з'єднання та тиснемо клавішу "З'єднатися". Ви зайшли на файловий обмінник (FTP). На одній із панелей відображається папки файлового обмінника на другий Ваш поточний диск.</div>
+                    <div class="headerchaspyt">9. Як завантажити свої файли на FTP?</div>
+                    <div class="subheaderchaspyt">Файли абонентів локальної мережі можуть завантажувати тільки в папку incoming. Підключаємося за допомогою ТС-тоталкомандера. Як підключитися трохи вище. Відкриваємо каталог на клавішу F5 і копіюємо файли у відповідний розділ.</div>
+                </div>
+
+<!-- Контакти -->
+
+                <div class="contacts" style="display:none;">
+                    <div class="header1">Зворотній зв'язок</div>
+                    <div class="subheadercont">Ви можете лишити повідомлення, заповнивши форму нижче:</div>
+                    <div class="inputfields">
+                        <label for="field1">Ваше ім'я:</label>
+                        <input type="text" id="field1" name="field1">
+                    </div>
+                
+                    <div class="inputfields">
+                        <label for="field2">Ваш email:</label>
+                        <input type="text" id="field2" name="field2">
+                    </div>
+                
+                    <div class="inputfields">
+                        <label for="field3">Заголовок:</label>
+                        <input type="text" id="field3" name="field3">
+                    </div>
+                
+                    <div class="inputfields">
+                        <label for="field4">Повідомлення:</label>
+                        <input type="text" id="field4" name="field4">
+                    </div>
+
+                    <input type="submit" name="op" id="edit-submit" value="Відправити" class="form-submit art-button">
+                </div>
+
+<!-- Реквізити -->
+
+                <div class="rekvisyty" style="display:none;">
+                    <div class="header1">Реквізити</div>
+                    <ul>
+                        <li class="headerrekv">З 20.02.2021 відповідно до рішення Наглядової ради ФІЛІЯ "ПОЛТАВСЬКЕ ГРУ" переходить на єдиний МФО ПриватБанку.</li><br>
+                                    
+                        <li class="subheaderrekv">ТОВ "АірНет" 39500, Полтавська обл. м. Карлівка, вул. Полтавський шлях, 44 а
+                        п/р UA543052990000026005001201862 в ПАТ КБ "ПРИВАТБАНК", ЄДРПОУ 37115208., тел. <span class="telnumber">+380504057979</span></li><br>
+                                    
+                        <li class="subheaderrekv">ФОП Кріль Петро Якович 39500, Полтавська обл. м. Карлівка, вул. Полтавський шлях, 44 ап/р UA663052990000026000021201955 в ПАТ КБ "ПРИВАТБАНК", ЄДРПОУ/ІНН 1984206316., тел. <span class="telnumber">+380504057979</span></li><br>
+
+                        <li class="subheaderrekv">ФОП Кріль Алла Іванівна 39500, Полтавська обл. м. Карлівка, вул. Полтавський шлях, 44 ап/р UA053052990000026000031202104 в ПАТ КБ "ПРИВАТБАНК", ЄДРПОУ/ІНН 2876304123., тел. <span class="telnumber">+380504057979</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image">
+                <img src="fotomain/main3.png" class="fotomargin">
+                <ul class="usefullinks">
+                    <li class="headlink">Новини України та Світу</li>
+                    <li class="links"><a href="https://censor.net/">ЦензорНЕТ</a></li>
+                    <li class="links"><a href="https://www.ukr.net/">UKR.NET</a></li>
+                    <li class="headlink">ТВ програма</li>
+                    <li class="links"><a href="http://www.vsetv.com/schedule.html">Все ТВ</a></li>
+                    <li class="headlink">ТВ трансляція</li>
+                    <li class="links"><a href="https://ip.ontivi.net/">Онлайн ТВ канали</a></li>
+                    <li class="links"><a href="https://1plus1.video/tvguide/1plus1/online">Український VOD портал</a></li>
+                    <li class="headlink">Погода в Карлівці</li>
+                    <li class="links"><a href="https://ua.sinoptik.ua/%D0%BF%D0%BE%D0%B3%D0%BE%D0%B4%D0%B0-%D0%BA%D0%B0%D1%80%D0%BB%D1%96%D0%B2%D0%BA%D0%B0-303010538/10-%D0%B4%D0%BD%D1%96%D0%B2">Sinoptik</a></li>
+                    <li class="links"><a href="https://meteofor.com.ua/ru/weather-karlivka-12195/">Gismeteo</a></li>
+                    <li class="headlink">Музика</li>
+                    <li class="links"><a href="https://play.tavr.media/hitfm/">Radio FM</a></li>
+                    <li class="links"><a href="https://promin.fm/">Радіо Промінь</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

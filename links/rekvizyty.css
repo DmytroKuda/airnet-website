@@ -1,0 +1,13 @@
+.headerrekv {
+    list-style-type: none;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subheaderrekv {
+    margin-top: 1rem;
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}

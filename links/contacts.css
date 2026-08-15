@@ -1,0 +1,38 @@
+.subheadercont {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inputfields {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+}
+
+label {
+    display: block;
+    padding-left: 2rem;
+    font-size: 1.2rem;
+}
+
+input {
+    width: 90%;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+}
+
+#field4 {
+    height: 4rem;
+}
+
+#edit-submit {
+    width: 88%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    font-size: 1rem;
+}

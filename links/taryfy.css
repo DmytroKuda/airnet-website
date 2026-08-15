@@ -1,0 +1,20 @@
+.rowsheader {
+    background-color: rgb(189, 193, 155);
+    font-size: 1.5rem;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tarcont {
+    background-color:#caddeb;
+    border: 0.1rem solid #3498db;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.tarcont2 {
+    background-color:#caddeb;
+    border: 0.1rem solid #3498db;
+    padding: 0.5rem;
+}

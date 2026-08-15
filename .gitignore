@@ -1,0 +1,11 @@
+# Source archive
+*.rar
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE & editor settings
+.vscode/
+.idea/
+*.swp

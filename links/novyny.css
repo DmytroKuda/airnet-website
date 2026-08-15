@@ -1,0 +1,25 @@
+.header2 {
+    list-style-type: none;
+    font-size: 2rem;
+    padding-left: 4rem;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.subheader2 {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.subheader2:hover {
+    color: red;
+    cursor: pointer;
+    display:inline-block;
+}
+
+.details {
+    font-size: 1rem;
+    margin-bottom: 1.7rem;
+    margin-top: 1.7rem;
+}
